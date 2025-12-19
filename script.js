@@ -1,7 +1,13 @@
-// Este arquivo script.js será utilizado para adicionar interatividade e funcionalidades ao site.
-// Conecte este arquivo ao arquivo index.html utilizando a tag <script>.
+// script.js - Este arquivo adiciona interatividade ao site
 
-document.addEventListener("DOMContentLoaded", () => {
-    console.log("Script.js conectado e funcionando corretamente!");
-    // Adicione aqui os eventos e funcionalidades do site.
+// Exemplo de manipulação de eventos
+function mostrarMensagem() {
+    alert('Olá! Este site agora é interativo.');
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const botao = document.getElementById('meuBotao');
+    if (botao) {
+        botao.addEventListener('click', mostrarMensagem);
+    }
 });
